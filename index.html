@@ -77,7 +77,7 @@
 
                 <label for="userState">estado:</label>
                 
-                <select name="userState" id="userState">
+                <select name="userState" id="userState" required>
                     <option value="notInformed">selecione</option>
                     <option value="acre">  AC, Acre</option>
                     <option value="alagoas">  AL, Alagoas</option>
@@ -124,6 +124,16 @@
             <br>
             <input type="checkbox" name="social" value="x" id="x"><label for="x">x</label>
             <br>
+
+            <label for="musicStyle">estilo musical:</label>
+            <input  list="styleTypes" type="text" id="musicStyle" name="userMusicStyle">
+            <datalist id="styleTypes">
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Eletrônica">Eletrônica</option>
+                <option value="Hip Hop">Hip Hop</option>
+                <option value="Reggae">Reggae</option>
+            </datalist>
             </fieldset>
 
             <button type="submit">enviar</button>
