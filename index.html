@@ -13,8 +13,8 @@
 
     <section>
         <form action="" method="get">
-            
-            <fieldset>   
+             
+             <fieldset>    
             
 
 
@@ -41,9 +41,9 @@
                 <br/>
                 <label for="userImage">imagem:</label>
                 <input type="file" id="userImage" name="userImage" accept="image/*" />
-            
+           
             </fieldset>
-            
+
             
             <fieldset>
                 <legend>perfil</legend>
@@ -77,7 +77,7 @@
 
                 <label for="userState">estado:</label>
                 
-                <select name="userState" id="userState" required>
+                <select name="userState" id="userState">
                     <option value="notInformed">selecione</option>
                     <option value="acre">  AC, Acre</option>
                     <option value="alagoas">  AL, Alagoas</option>
@@ -114,17 +114,17 @@
             </fieldset>
 
             <fieldset>
-                <legend>Hábitos</legend>
-                <p>Redes Sociais:</p>
-            <input type="checkbox" name="social" value="instagram" id="instagram"><label for="instagram">instagram</label>
-            <br>
-            <input type="checkbox" name="social" value="facebook" id="facebook"><label for="facebook">facebook</label>
-            <br>
-            <input type="checkbox" name="social" value="linkdin" id="linkdin"><label for="linkdin">linkdin</label>
-            <br>
-            <input type="checkbox" name="social" value="x" id="x"><label for="x">x</label>
-            <br>
-
+                            <legend>Hábitos</legend>
+                            <p>Redes Sociais:</p>
+                        <input type="checkbox" name="social" value="instagram" id="instagram"><label for="instagram">instagram</label>
+                        <br>
+                        <input type="checkbox" name="social" value="facebook" id="facebook"><label for="facebook">facebook</label>
+                        <br>
+                        <input type="checkbox" name="social" value="linkdin" id="linkdin"><label for="linkdin">linkdin</label>
+                        <br>
+                        <input type="checkbox" name="social" value="x" id="x"><label for="x">x</label>
+                        <br>
+            
             <label for="musicStyle">estilo musical:</label>
             <input  list="styleTypes" type="text" id="musicStyle" name="userMusicStyle">
             <datalist id="styleTypes">
@@ -137,11 +137,65 @@
             <br>
             <label for="userColor">cor favorita:</label>
             <input type="color" name="userColor" id="userColor">
-            </fieldset>
+            <!-- </fieldset> -->
 
-            <button type="submit">enviar</button>
+        
+
+<!-- otima,boa, regular, ruim -->
+        
+        <fieldset>
+        <legend>opnião</legend>
+
+        <input type="radio" name="opinion" value="otima" id="otima">
+        <label for="otima">ótima</label>
+        <br>
+        <input type="radio" name="opinion" value="boa" id="boa">
+        <label for="boa">boa</label>
+        <br>    
+        <input type="radio" name="opinion" value="regular" id="regular">
+        <label for="regular">regular</label>
+        <br>
+        <input type="radio" name="opinion" value="ruim" id="ruim">
+        <label for="ruim">ruim</label>
+
+        <br>
+        <br>
+        <label for="comment">comentario:</label>
+        <textarea type="text" name="comment" id="comment" placeholder="deixe seu comentario aqui"></textarea>
+        <br>
+        <br>
+       
         </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>confirmações</legend>
+            <input type="checkbox" name="userLgpd" id="userLgpdTerm " value="accepted" required>
+            <label for="userLgpdTerm">eu aceito participar da pesquisa</label>
+            <br>
+            <input type="checkbox" name="userGetResult" id="userGetResult " value="accepted" >
+            <label for="userGetResult">desejo receber por email</label>
+            <br>
+            <button type="submit">enviar</button>
+            <br>
+            <br>
+            <button type="reset">limpar</button>
+        </fieldset>
+
+                    <legend>confirmações</legend>
+            <input type="checkbox" name="userLgpd" id="userLgpdTerm " value="accepted" required>
+            <label for="userLgpdTerm">eu aceito participar da pesquisa</label>
+            <br>
+            <input type="checkbox" name="userGetResult" id="userGetResult " value="accepted" >
+            <label for="userGetResult">desejo receber por email</label>
+            <br>
+            <button type="submit">enviar</button>
+            <br>  
+            <br>
+            <button type="reset">limpar</button>
+
+        </fieldset>
     </section>
     
 </body>
-</html>
+</html> 
